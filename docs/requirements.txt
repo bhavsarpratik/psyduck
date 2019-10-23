@@ -1,0 +1,4 @@
+sphinx>=2.1.2
+sphinx-rtd-theme>=0.4.3
+# sphinx_materialdesign_theme>=0.1.11
+-e git+https://github.com/pytorch/pytorch_sphinx_theme.git#egg=pytorch_sphinx_theme
