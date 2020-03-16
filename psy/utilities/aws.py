@@ -6,7 +6,7 @@ import boto3
 
 
 def set_parameter_value_kms(parameter_name, value):
-    os.system('aws ssm --profile saml put-parameter --name %s --value %s --type SecureString --overwrite' % (
+    os.system('aws ssm put-parameter --name %s --value %s --type SecureString --overwrite' % (
         parameter_name, value))
 
 
