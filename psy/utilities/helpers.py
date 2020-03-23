@@ -171,7 +171,11 @@ def get_datetime(zone='UTC', format='%Y-%m-%d-%H:%M:%S'):
     return time.strftime(format)
 
 
-def get_relative_date(zone='UTC', format='%Y-%m-%d', **kwargs):
+def get_relative_date(zone='Asia/Kolkata', format='%Y-%m-%d', **kwargs): 
+    """
+    zone: Asia/Kolkata for India
+    **kwargs: years, months, days, leapdays, weeks, hours, minutes, seconds, microseconds
+    """
     tz = timezone(zone)
     time = datetime.datetime.now(tz)
     time_relative = time + relativedelta(**kwargs)
