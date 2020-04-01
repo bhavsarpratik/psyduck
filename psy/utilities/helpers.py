@@ -130,16 +130,13 @@ def add_params_to_object_from_dict_path(object, dictionary_path, key=None):
     dictionary = json.load(open(dictionary_path))
     return add_params_to_object_from_dict(object, dictionary, key=key)
 
-
-def call(method, url, payload=None, headers={'Content-Type': 'application/json'}, output='json'):
+        
+def call(method, url, payload=None, headers={'Content-Type': 'application/json'}):
     """ Use for calling APIs.
     Usage
     call('delete', 'http://localhost:8888/delete')
     """
-    try:
-        return getattr(getattr(requests, method)(url, data=json.dumps(payload), headers=headers), output)
-    except Exception as e:
-        print('Problem with API call:', e)
+    return getattr(getattr(requests, method)(url, data=json.dumps(payload), headers=headers), 'json')()
 
 
 def get_cpu_count():
