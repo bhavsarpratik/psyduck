@@ -2,7 +2,7 @@
 
 A library for faster development of ML and python projects.
 
-Works with python Python 3.5 and above.
+Works with Python 3.5+.
 
 ## Project Organization
 
@@ -28,9 +28,8 @@ Works with python Python 3.5 and above.
     └── setup.py               
 ```
 
-Here's how to use `psyduck` in your application:
 
-### Install from nexus
+### Install with pip
 `pip install psyduck`
 
 ### Latest install
