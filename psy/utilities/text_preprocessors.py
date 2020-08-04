@@ -167,13 +167,4 @@ def process_parenthesis(inputstring):
             if len(inputstring) > stop:
                 inputstring = inputstring[0: start:] + inputstring[stop + 1::]
 
-    inputstring=inputstring.strip()
-    return inputstring
-
-
-
-def text_cleaner2(x):
-    """Text processor for preparation, train and predict."""
-    for pp in [unicode_to_ASCII, remove_numbers,  remove_small_words, remove_newline, remove_roman_numbers, process_parenthesis]:
-        x = pp(x)
-    return x.lower()
+    return inputstring.strip() 
