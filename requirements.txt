@@ -8,3 +8,4 @@ imblearn>=0.0
 seaborn>=0.9.0
 scikit_learn>=0.21.2
 xmltodict>=0.12.0
+unidecode
